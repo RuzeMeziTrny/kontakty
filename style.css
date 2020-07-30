@@ -8,3 +8,56 @@ body {
 }
 
 /* ---------------------------------------------------- */
+
+h1 {
+	text-align: center;
+	margin-bottom: 0;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+}
+
+.osoba {
+	text-align: center;
+	border: 1px solid rgb(180, 180, 180);
+	border-radius: 5px;
+	box-shadow: 0 1px 2px lightblue;
+	padding: 15px;
+	margin: 2%;
+}
+
+.foto {
+	border-radius: 50%;
+	max-width: 100%;
+}
+
+@media (min-width: 540px) {
+	.container {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.osoba {
+		margin: 1%;
+		width: 48%;
+		text-align: left;
+		display: flex;
+	}
+	.fotka {
+		flex-basis: 25%;
+		align-self: center;
+	}
+	.popisek {
+		flex-basis: 75%;
+	}
+
+	h2 {
+		padding-left: 10%;
+	}
+	
+	.popis {
+		margin: 0;
+		padding-left: 10%;
+	}
+}
