@@ -11,7 +11,7 @@ body {
 
 h1 {
 	text-align: center;
-	margin-bottom: 0;
+	margin-bottom: 2%;
 }
 
 .container {
@@ -33,21 +33,24 @@ h1 {
 	max-width: 100%;
 }
 
-@media (min-width: 540px) {
+@media (min-width: 540px) and (max-width: 960px) {
 	.container {
 		flex-direction: row;
 		flex-wrap: wrap;
 	}
+
 	.osoba {
 		margin: 1%;
 		width: 48%;
 		text-align: left;
 		display: flex;
 	}
+
 	.fotka {
 		flex-basis: 25%;
 		align-self: center;
 	}
+	
 	.popisek {
 		flex-basis: 75%;
 	}
@@ -59,5 +62,21 @@ h1 {
 	.popis {
 		margin: 0;
 		padding-left: 10%;
+	}
+}
+
+@media (min-width: 961px) {
+	.container {
+		flex-direction: row;
+		flex-wrap: nowrap;
+	}
+
+	.osoba {
+		margin: 1%;
+		width: 25%;
+	}
+
+	.popis {
+		margin: 0;
 	}
 }
